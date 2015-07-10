@@ -15,6 +15,7 @@ df$Datetime <- as.POSIXct(datetime)
 
 png("plot1.png", width=480, height=480)
 
-hist(df$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
+hist(df$Global_active_power, col="red", main="Global Active Power", 
+     xlab="Global Active Power (kilowatts)")
 
 dev.off()
