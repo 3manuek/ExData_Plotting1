@@ -13,6 +13,7 @@ df <- subset(df, subset=(Date >= "2007-02-01" & Date <= "2007-02-02"))
 datetime <- paste(as.Date(df$Date), df$Time)
 df$Datetime <- as.POSIXct(datetime)
 
+# ploting
 png("plot1.png", width=480, height=480)
 
 hist(df$Global_active_power, col="red", main="Global Active Power", 
